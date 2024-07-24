@@ -3,6 +3,16 @@ entries:
   nginx:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-07-24T18:51:44.181630143Z"
+    description: A Helm chart for Kubernetes
+    digest: 8c7252e7d8f757ec9dd93c32910633245a758babbabd781288a8b0a66fc031d2
+    name: nginx
+    type: application
+    urls:
+    - https://github.com/sart-glitch/helm-charts/releases/download/nginx-0.1.3/nginx-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-07-24T18:43:26.355607987Z"
     description: A Helm chart for Kubernetes
     digest: 24232e61ec705e8068303b1542d37c12ea1ee17fc7a372812fbd526d4a078a51
@@ -31,4 +41,4 @@ entries:
     urls:
     - https://github.com/sart-glitch/helm-charts/releases/download/nginx-0.1.0/nginx-0.1.0.tgz
     version: 0.1.0
-generated: "2024-07-24T18:43:26.355624368Z"
+generated: "2024-07-24T18:51:44.181679044Z"
