@@ -21,15 +21,13 @@ To uninstall the chart:
 
 
 =====================================================================================
-To install nginx controller:
+
+# Installation of Nginx controller through helm with https redirection with AWS ACM certificate
+
 From now you can directly install the nginxcontroller with https redirection from the below helm charts,
-
-
-
+ 
 with the latest version,  nginx 4.11.1
-
-
-
+ 
 helm repo update
 helm repo add nginx-ingress-ss https://sart-glitch.github.io/helm-charts/
 helm install nginx-ingress nginx-ingress-ss/nginx-ingress-latest \
@@ -39,3 +37,4 @@ helm install nginx-ingress nginx-ingress-ss/nginx-ingress-latest \
   --set nlb.acm="arn:aws:acm:us-east-1:851725167385:certificate/72da038a-ab0f-47f8-a9b8-a18210248ca8" \
   --set nlb.public_subnets="subnet-09fc3b10cf1783e41\,subnet-05e763f7e13075284" \
   --set nlb.nlb_name="Illusto-LB"
+
