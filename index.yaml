@@ -43,6 +43,16 @@ entries:
     version: 0.1.0
   nginx-ingress-latest:
   - apiVersion: v2
+    appVersion: 4.11.1
+    created: "2024-07-25T20:44:59.081856792Z"
+    description: A Helm chart for Kubernetes
+    digest: 6caa751a94f2383bbe824a76f230e246e0ed370fd773191a5315fc5f120f7fa3
+    name: nginx-ingress-latest
+    type: application
+    urls:
+    - https://github.com/sart-glitch/helm-charts/releases/download/nginx-ingress-latest-0.1.1/nginx-ingress-latest-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
     appVersion: 1.16.0
     created: "2024-07-25T20:43:55.620050705Z"
     description: A Helm chart for Kubernetes
@@ -52,4 +62,4 @@ entries:
     urls:
     - https://github.com/sart-glitch/helm-charts/releases/download/nginx-ingress-latest-0.1.0/nginx-ingress-latest-0.1.0.tgz
     version: 0.1.0
-generated: "2024-07-25T20:43:55.620076093Z"
+generated: "2024-07-25T20:44:59.081876339Z"
