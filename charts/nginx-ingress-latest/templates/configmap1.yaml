@@ -1,0 +1,24 @@
+# Source: ingress-nginx/templates/controller-configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  labels:
+    helm.sh/chart: ingress-nginx-4.11.1
+    app.kubernetes.io/name: ingress-nginx
+    app.kubernetes.io/instance: release-name
+    app.kubernetes.io/version: "1.11.1"
+    app.kubernetes.io/part-of: ingress-nginx
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/component: controller
+  name: release-name-ingress-nginx-controller
+  namespace: {{ .Release.Namespace }}
+    #namespace: ingress-nginx-new
+data:
+  allow-snippet-annotations: 'true'
+  http-snippet: |
+    server{
+      listen 2443;
+      return 308 https://$host$request_uri;
+    }
+  proxy-real-ip-cidr: {{ .Values.vpc.vpc_cidr }} ##10.100.0.0/16
+  use-forwarded-headers: 'true' ##

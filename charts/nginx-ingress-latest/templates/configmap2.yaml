@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: tcp-services
+  namespace: {{ .Release.Namespace }}
+    #namespace: ingress-nginx-new
+data:
+##  5432: "staging/postgresql:5432"
+##5431: "sandbox/postgresql-sandbox-service:5431"
+##27016: "sandbox/mongodb-sandbox-service:27016"
+##27017: "staging/mongodb:27017"

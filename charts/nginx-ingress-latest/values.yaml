@@ -1,0 +1,10 @@
+# Default values for nginx-ingress-latest.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+vpc:
+  vpc_cidr: "10.100.0.0/16"
+
+nlb:
+  acm: "arn:aws:acm:us-east-1:851725167385:certificate/72da038a-ab0f-47f8-a9b8-a18210248ca8"
+  public_subnets: "subnet-09fc3b10cf1783e41, subnet-05e763f7e13075284"
+  nlb_name: "Illusto-LB"
