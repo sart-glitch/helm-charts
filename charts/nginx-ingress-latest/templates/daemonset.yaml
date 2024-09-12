@@ -103,7 +103,7 @@ spec:
           containerPort: 80
           protocol: TCP
         - name: https
-          containerPort: 443
+          containerPort: 80
           protocol: TCP
         - name: tohttps
           containerPort: 2443
